@@ -1,0 +1,563 @@
+/* #DASHBOARD */
+.body{
+    font-family: 'Times New Roman';
+    background-color: #f9f9f9;
+}
+.navigation-bar{
+    padding: 10px 40px;
+    background-color: white;
+    border-bottom: 3px solid #7a0808;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu{
+    display: flex;
+    gap: 160px;
+    align-items: center;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.booking-btn{
+    background-color: #7a0808;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+.booking-btn:hover{
+    background-color: #cb1313;
+    color: white;
+    transform: scale(1.05);
+}
+.header-container{
+    position: relative;
+    height: 500px;
+    width: 94%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right:80px ;
+}
+.bg-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 94%;
+    object-fit: cover;
+    filter: brightness(0.7);
+    z-index: -1;
+}
+.slogan{
+    position: relative;
+    color: white;
+    font-size:48px ;
+    font-weight: 900;
+    font-weight: bold;
+    text-align: right;
+}
+.destinations-corner{
+    padding: 50px 20px;
+}
+.section-title{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: black;
+    letter-spacing: 2px;
+    font-style: italic;
+    font-weight: bold;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.card{
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.wrapper{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.dest-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.card:hover.dest-img{
+    transform: scale(1,1);
+}
+.dest-info{
+    padding: 20px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: right;
+}
+.info-group{
+    flex: 1;
+    padding-right: 10px;
+}
+.dest-title{
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    font-weight: 800;
+    color: black;
+    text-transform: uppercase;
+}
+.click{
+    cursor: pointer;
+    display: block;
+}
+.detail{
+    font-size: 12px;
+    color: gray;
+    font-style: italic;
+    display: block;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+.click.hover:detail{
+    color: #cb1313;
+    text-decoration: underline;
+}
+.dest-slide{
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.dest-slide p {
+    font-size: 13px;
+    color: gray;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+.click:hover .dest-slide{
+    max-height: 150px;
+    opacity: 1;
+}
+.btn-detail{
+    background-color: #7a0808;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+.btn-detail:hover{
+    background-color: #cb1313;
+    color: white;
+    transform: scale(1.05);
+}
+.contact{
+	background-color: #420202;
+	color: white;
+	padding: 40px 20px;
+	text-align: center;
+	margin-top: 0;
+}
+.contact-us h3{
+	color:white;
+	margin-bottom: 15px;
+	font-size: 36px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.contact-us p{
+	font-size: 20px;
+	color: white;
+	margin: 5px 0;
+}
+.contact-detail{
+	margin: 20px 0;
+	padding: 20px;
+	border-top: 1px solid #f4b0a2;
+	border-bottom: 1px solid #f4b0a2;
+}
+
+/* #DESTINATION */
+.destination-detail{
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+.page-title{
+    font-size: 36px;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #420202;
+}
+.gallery{
+    margin-bottom: 30px;
+}
+.main-pict{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.main-pict img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.small-pict{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+.small-pict img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.destination-desc{
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+.itinerary{
+    margin: 30px 0;
+}
+.itinerary-title{
+    border-bottom: 2px solid #420202;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.itinerary-table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.itinerary-table th{
+    background-color: #7a0808;
+    color: white;
+    text-align: left;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid black;
+}
+.itinerary-table td{
+    padding: 15px;
+    border-bottom: 1px #420202;
+    line-height: 1.5;
+    border: 1px solid black;
+}
+.booking-box{
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+.ticket-header{
+    margin-top: 0;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    color: #7a0808;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+.ticket-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+.ticket-detail{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.ticket-detail td{
+    padding: 10px;
+    border-bottom: 1px #420202;
+    line-height: 1;
+}
+.booking-btn-2{
+    background-color: #7a0808;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: block;
+    width: fit-content;
+    margin-top: 20px;
+}
+.booking-btn-2:hover{
+    background-color: #cb1313;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* #ABOUTUS */
+.header-container-2{
+    position: relative;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.about-us-title{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: black;
+    letter-spacing: 2px;
+    font-style: italic;
+    font-weight: bold;
+}
+.aboutus-desc{
+    max-width: 800px;
+    line-height: 1.5;
+    color: black;
+    margin: 40px auto;
+    text-align: justify;
+}
+.aboutus-desc p{
+    margin-bottom: 20px;
+}
+.aboutus-desc h2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.aboutus-desc ul{
+    margin-bottom: 30px;
+}
+.abtus-det{
+    border-bottom: 1px solid #420202;
+}
+
+/* #FORM */
+.form-booking{
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-box{
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+.form-title{
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #7a0808;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.data{
+    margin-bottom: 15px;
+    text-align: left;
+}
+.data label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.data select{
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.btn-area{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-family: 'Times New Roman';
+}
+.btn-back{
+    background-color: #7a0808;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+.btn-back:hover{
+    background-color: #cb1313;
+    color: white;
+    transform: scale(1.05);
+}
+.btn-submit{
+    background-color: #7a0808;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+    border: none;
+}
+.btn-submit:hover{
+    background-color: #cb1313;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* #TRANSPORTATION */
+.transport-title{
+    text-align: center;
+    color: black;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.transport-wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.vehicle{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    background-color: white;
+}
+.vehicle-image{
+    flex: 1;
+    min-width: 300px;
+}
+.vehicle-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.vehicle-info{
+    flex: 1.5;
+    padding: 30px;
+    text-align: left;
+}
+.vehicle-info h2{
+    color: #7a0808;
+    margin-top: 0;
+    font-size: 28px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+.vehicle-detail{
+     width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.vehicle-detail tdP{
+    padding: 15px;
+    border-bottom: 1px #420202;
+    line-height: 1.5;
+    border: 1px solid black;
+}
+
+/* #RESERVATION SUCCESS */
+.success-header{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right:80px ;
+}
+.success-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 94%;
+    object-fit: cover;
+    filter: brightness(0.7);
+    z-index: -1;
+}
+.success-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+    width: 80%;
+    z-index: 10;
+}
+.success-content h1{
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.success-content p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.btn-home{
+    background-color: #7a0808;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+.btn-home:hover{
+    background-color: #cb1313;
+}
